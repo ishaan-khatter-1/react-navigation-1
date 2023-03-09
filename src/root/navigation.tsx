@@ -7,6 +7,7 @@ import Button from '../components/Button';
 import PageOne from '../components/PageOne';
 import PageTwo from '../components/PageTwo';
 import Welcome from '../components/Welcome';
+import Signup from '../components/Signup';
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,11 @@ const Navigation = () => {
         <Stack.Screen name="Button" component={Button} />
         <Stack.Screen name="PageOne" component={PageOne} />
         <Stack.Screen name="PageTwo" component={PageTwo} />
+        <Stack.Screen
+          name="Signup"
+          component={Signup}
+          options={{headerShown: false}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
